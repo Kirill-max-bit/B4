@@ -12,4 +12,3 @@ smaller_distance = min(distance_km, distance_m)
 
 
 print("Меньшее расстояние:", smaller_distance)
-

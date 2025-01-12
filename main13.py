@@ -1,6 +1,6 @@
 def has_real_roots(a, b, c):
     D = b**2 - 4*a*c
-    
+
     if D > 0:
         print("Уравнение имеет два вещественных корня.")
     elif D == 0:
