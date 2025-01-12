@@ -1,8 +1,9 @@
-from math import sin
- 
-x = int(input("x="))
+from math import sin, radians
+
+x = int(input("Введите число: "))
 if x > 0:
-    y = sin(x)**2
+    primer_one = sin(radians(x)) ** 2
+    print(f"Ответ: {primer_one}")
 else:
-    y = 1 - (2 * sin(x * x))
-print(y)
+    primer_two = 1 - 2 * sin(radians(x * x))
+    print(f"Ответ: {primer_two}")
