@@ -1,15 +1,8 @@
-import math
-
-def calculate_y(x):
-    if x == 0:
-        return math.sin(x)
-    else:
-        return 2 * math.sin(x)
-
-try:
-    x = float(input("Введите значение x: "))
-except ValueError:
-    print("Ошибка ввода! Введено нечисловое значение.")
+from math import sin
+ 
+x = int(input("x="))
+if x > 0:
+    y = sin(x)**2
 else:
-    result = calculate_y(x)
-    print(f"При x = {x}, y = {result}")
+    y = 1 - (2 * sin(x * x))
+print(y)
