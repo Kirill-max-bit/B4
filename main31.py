@@ -8,4 +8,4 @@ def all_digits_same(three_digit_number):
 
 number = 111
 result = all_digits_same(number)
-print(result) 
+print(result)
