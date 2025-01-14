@@ -1,25 +1,11 @@
-def check_digits(number):    
-    hundreds = number // 100
-    tens = (number // 10) % 10
-    units = number % 10
+def all_digits_same(three_digit_number):
+    hundreds = three_digit_number // 100
+    tens = (three_digit_number // 10) % 10
+    units = three_digit_number % 10
 
-    all_same = hundreds == tens and tens == units
-
-    has_duplicates = hundreds == tens or hundreds == units or tens == units
-
-    return all_same, has_duplicates
+    return hundreds == tens and tens == units
 
 
-three_digit_number = int(input("Введите трехзначное число: "))
-
-all_same, has_duplicates = check_digits(three_digit_number)
-
-if all_same:
-    print("Все цифры числа одинаковые.")
-else:
-    print("Не все цифры числа одинаковые.")
-
-if has_duplicates:
-    print("Среди цифр числа есть одинаковые.")
-else:
-    print("Среди цифр числа нет одинаковых.")
+number = 111
+result = all_digits_same(number)
+print(result) 
