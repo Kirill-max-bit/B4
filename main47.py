@@ -6,4 +6,3 @@ if a == b > c:
     print("true")
 else:
     print("false")
-
