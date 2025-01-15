@@ -1,14 +1,15 @@
-a = int(input("Введите длину конверта (мм): "))
-b = int(input("Введите ширину конверта (мм): "))
-c = int(input("Введите длину открытки (мм): "))
-d = int(input("Введите ширину открытки (мм): "))
+length_envelope = int(input("Введите длину конверта (мм): "))
+width_envelope = int(input("Введите ширину конверта (мм): "))
+length_card = int(input("Введите длину открытки (мм): "))
+width_card = int(input("Введите ширину открытки (мм): "))
 
 
-c_with_margin = c - 2
-d_with_margin = d - 2
+length_card -= 2
+width_card -= 2
 
 
-if (c_with_margin <= a and d_with_margin <= b) or (c_with_margin <= b and d_with_margin <= a):
+if (length_card <= length_envelope and width_card <= width_envelope) or \
+   (length_card <= width_envelope and width_card <= length_envelope):
     print("Открытка поместится в конверт.")
 else:
     print("Открытка не поместится в конверт.")
