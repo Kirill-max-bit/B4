@@ -1,10 +1,10 @@
 def y(x):
-    if x < 1:
-        return 1 / x
+    if x < -1:
+        return -1 / x
     elif x <= 10:
         return x ** 2
     else:
-        return 1
+        return -1
 
 
 x = float(input("Введите значение x: "))
