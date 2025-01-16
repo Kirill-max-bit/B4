@@ -3,4 +3,5 @@ def is_leap_year(year):
 
 
 year = int(input("Введите год: "))
-print(f"{year} год {'является' if is_leap_year(year) else 'не является'} високосным.")
+result = "Является" if is_leap_year(year) else "Не является"
+print(f"{year} год {result} високосным.")
